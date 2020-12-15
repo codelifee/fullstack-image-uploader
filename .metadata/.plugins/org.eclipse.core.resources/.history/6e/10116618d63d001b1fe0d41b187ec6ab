@@ -1,0 +1,5 @@
+package com.codelifee.imageuploader.config;
+
+public class AmazonConfig {
+
+}

@@ -1,0 +1,12 @@
+package com.codelifee.imageuploader.filestore;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class FileStore {
+
+	private final AmazonS3 s3;
+	
+	
+	
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="com.amazonaws.auth.AWSCredentials"/>
+<fullyQualifiedTypeName name="com.amazonaws.auth.BasicAWSCredentials"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.s3.AmazonS3ClientBuilder"/>
+<fullyQualifiedTypeName name="com.amazonaws.auth.AWSStaticCredentialsProvider"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.s3.AmazonS3"/>
+<fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="com.amazonaws.services.s3.model.ObjectMetadata"/>
+</qualifiedTypeNameHistroy>

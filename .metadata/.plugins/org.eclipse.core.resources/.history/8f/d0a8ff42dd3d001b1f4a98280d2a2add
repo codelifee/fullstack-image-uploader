@@ -1,0 +1,12 @@
+package com.codelifee.imageuploader.bucket;
+
+public enum BucketName {
+
+	PROFILE_IMAGE("codelifee-image-upload-123");
+	
+	private final String bucketName;
+
+	private BucketName(String bucketName) {
+		this.bucketName = bucketName;
+	}
+}

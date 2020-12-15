@@ -1,0 +1,26 @@
+package com.codelifee.imageuploader.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.amazonaws.auth.AWSCredentials;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
+import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+
+@Configuration
+public class AmazonConfig {
+
+	public AmazonS3 S3() {
+		AWSCredentials awsCredentials = new BasicAWSCredentials(
+				accessKey:"AKIAIAVZZGKJEUDJB4EQ",
+				secretKey:"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"
+				);
+		
+		return AmazonS3ClientBuilder
+				.standard()
+				.withCredentials(new AWSStaticCredentialsProvider(awsCredentials))
+				.build();
+	}
+	
+}

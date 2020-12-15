@@ -1,0 +1,5 @@
+package com.codelifee.imageuploader.bucket;
+
+public enum BucketName {
+
+}
