@@ -1,0 +1,10 @@
+package com.codelifee.imageuploader.profile;
+
+import java.util.UUID;
+
+public class UserProfile {
+
+	private UUID userProfileId;
+	private String username;
+	private String userProfileImageLink; // S3 key
+}
