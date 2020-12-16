@@ -1,0 +1,8 @@
+package com.codelifee.imageuploader.profile;
+
+import org.springframework.stereotype.Repository;
+
+@Repositorysitory
+public class UserProfileDataAccessService {
+
+}

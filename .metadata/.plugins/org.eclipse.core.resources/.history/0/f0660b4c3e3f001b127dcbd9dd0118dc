@@ -1,0 +1,5 @@
+package com.codelifee.imageuploader.datastore;
+
+public class FakeUserProfileDataStore {
+
+}

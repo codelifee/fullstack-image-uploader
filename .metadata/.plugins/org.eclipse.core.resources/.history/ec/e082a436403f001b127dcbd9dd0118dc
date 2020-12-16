@@ -1,0 +1,5 @@
+package com.codelifee.imageuploader.profile;
+
+public class UserProfileService {
+
+}

@@ -1,0 +1,17 @@
+package com.codelifee.imageuploader.profile;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("api/v1/user-profile")
+public class UserPorfileController {
+
+	@GetMapping
+	public List<UserProfile> getUserProfile() {
+		
+	}
+	
+}

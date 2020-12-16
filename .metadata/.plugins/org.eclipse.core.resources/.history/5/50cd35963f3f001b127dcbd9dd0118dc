@@ -1,0 +1,15 @@
+package com.codelifee.imageuploader.profile;
+
+import org.springframework.stereotype.Repository;
+
+import com.codelifee.imageuploader.datastore.FakeUserProfileDataStore;
+
+@Repository
+public class UserProfileDataAccessService {
+
+	private final FakeUserProfileDataStore fakeUserProfileDataStore;
+	
+	public UserProfileDataAccessService(FakeUserProfileDataStore fakeUserProfileDataStore) {
+		this.fakeUserProfileDataStore = fakeUserProfileDataStore;
+	}
+}
