@@ -19,12 +19,11 @@ import org.springframework.web.multipart.MultipartFile;
 @CrossOrigin("*")
 public class UserPorfileController {
 
-	private final UserProfileDataAccessService userProfileService;
+	private final UserProfileService userProfileService;
 	
 	
 	@Autowired
-	public UserPorfileController(UserProfileDataAccessService userProfileService) {
-		super();
+	public UserPorfileController(UserProfileService userProfileService) {
 		this.userProfileService = userProfileService;
 	}
 
