@@ -24,7 +24,8 @@ const UserProfiles = () => {
     
     return (
       <div key={index}>
-        {/* { todo : profile image} */}
+        {userProfile.userProfileid ? 
+        <img src={`http://localhost:8080/api/v1/user-profile/${userProfile.userProfileId}/image/download`} /> : null}
         <br/>
         <br/>
         <h1>{userProfile.username}</h1>
@@ -45,7 +46,7 @@ const UserProfiles = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      axios.post(`http://localhost:8080/api/v1/user-profile/${userProfileId.userProfileId}/image/upload`,
+      axios.post(`http://localhost:8080/api/v1/user-profile/${userProfileId}/image/upload`,
       formData,
       {
         header: {
