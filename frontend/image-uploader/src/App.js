@@ -14,17 +14,24 @@ const UserProfiles = () => {
            const data = res.data;
            setUserProfiles(data);
          });
+
   };
+
+  const fetchProfileImage = (userProfiles) => {
+    
+  }
+
 
   useEffect(() => {
     fetchUserProfiles();
+
   }, []);
 
   return userProfiles.map((userProfile, index) => {
     
     return (
       <div key={index}>
-        {userProfile.userProfileid ? 
+        {userProfile.userProfileId ? 
         <img src={`http://localhost:8080/api/v1/user-profile/${userProfile.userProfileId}/image/download`} /> : null}
         <br/>
         <br/>
@@ -42,11 +49,12 @@ const UserProfiles = () => {
     const onDrop = useCallback(acceptedFiles => {
       const file = acceptedFiles[0];
       
+      console.log(userProfileId)
       
       const formData = new FormData();
       formData.append("file", file);
 
-      axios.post(`http://localhost:8080/api/v1/user-profile/${userProfileId}/image/upload`,
+      axios.post(`http://localhost:8080/api/v1/user-profile/${userProfileId.userProfileId}/image/upload`,
       formData,
       {
         header: {
