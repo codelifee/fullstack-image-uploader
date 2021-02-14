@@ -16,17 +16,15 @@ import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 @RequestMapping("api/v1/user-profile")
-@CrossOrigin("*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UserPorfileController {
 
 	private final UserProfileService userProfileService;
-	
 	
 	@Autowired
 	public UserPorfileController(UserProfileService userProfileService) {
 		this.userProfileService = userProfileService;
 	}
-
 
 	@GetMapping
 	public List<UserProfile> getUserProfile() {
@@ -43,4 +41,8 @@ public class UserPorfileController {
 		userProfileService.uploadUserProfileImage(userProfileId, file);
 	}
 	
+	@GetMapping("{userProfileId}/image/download")
+    public byte[] downloadUserProfileImage(@PathVariable("userProfileId") UUID userProfileId) {
+        return userProfileService.downloadUserProfileImage(userProfileId);
+    }
 }
